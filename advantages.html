@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advantages | E-Tourism</title>
+  <style>
+    :root {
+      --primary: #0d47a1;
+      --accent: #ffa000;
+      --bg: #f4f9ff;
+      --text: #333;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      animation: fadeInBody 1s ease-in;
+    }
+    header {
+      background: linear-gradient(to right, #0d47a1, #1976d2);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      animation: slideDown 1s ease-in-out;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      animation: fadeInHeader 1.3s ease-in;
+    }
+    nav {
+      background: var(--primary);
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      flex-wrap: wrap;
+      animation: fadeInNav 1.5s ease-in;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: var(--accent);
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 20px;
+      animation: fadeInUp 1.2s ease-in;
+    }
+    h2 {
+      text-align: center;
+      color: var(--primary);
+      font-size: 2rem;
+      margin-bottom: 30px;
+      animation: slideUp 1s ease-in-out;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      animation: bounceInCard 1s ease-in;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card h3 {
+      color: var(--accent);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 40px;
+      animation: fadeInTable 1.3s ease-in;
+    }
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+    th, td {
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background: var(--primary);
+      color: white;
+    }
+    footer {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      animation: fadeInFooter 1.2s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInHeader {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes fadeInNav {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes bounceInCard {
+      0% { transform: scale(0.95); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+    @keyframes fadeInTable {
+      from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes fadeInFooter {
+      from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Advantages of E-Tourism</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="advantages.html">Advantages</a>
+    <a href="impact.html">Impact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>Why E-Tourism is Beneficial</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Easy Access</h3>
+        <p>People can plan trips from home using mobile apps and websites. No need to stand in long lines.</p>
+      </div>
+      <div class="card">
+        <h3>Time-Saving</h3>
+        <p>Booking tickets, rooms, and guides happens in just minutes with online tools.</p>
+      </div>
+      <div class="card">
+        <h3>Cost Effective</h3>
+        <p>Travelers can compare prices, check reviews and find budget-friendly options easily.</p>
+      </div>
+      <div class="card">
+        <h3>Eco-Friendly</h3>
+        <p>Less paper, less travel for information means fewer emissions. A step toward green tourism.</p>
+      </div>
+    </div>
+
+    <h2 style="margin-top: 50px;">Traditional vs E-Tourism</h2>
+    <table>
+      <tr>
+        <th>Traditional Tourism</th>
+        <th>E-Tourism</th>
+      </tr>
+      <tr>
+        <td>Visit agents for bookings</td>
+        <td>Book online anytime</td>
+      </tr>
+      <tr>
+        <td>Use paper brochures</td>
+        <td>View virtual tours and maps</td>
+      </tr>
+      <tr>
+        <td>Limited information</td>
+        <td>Instant reviews & ratings</td>
+      </tr>
+      <tr>
+        <td>More time & money</td>
+        <td>Quick, easy & cost-saving</td>
+      </tr>
+    </table>
+  </section>
+
+  <footer>
+    &copy; 2025 | Class 8 ICSE E-Tourism Project
+  </footer>
+</body>
+</html>

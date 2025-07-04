@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | E-Tourism Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fef6f9 url('Jiva-School-Ad-.jpg') no-repeat center top;
+      background-size: cover;
+      background-attachment: fixed;
+      color: #333;
+      animation: fadeInBody 1s ease-in;
+    }
+    header {
+      background-color: rgba(194, 24, 91, 0.85);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      animation: slideDown 1s ease-out;
+    }
+    nav {
+      background-color: rgba(136, 14, 79, 0.9);
+      text-align: center;
+      padding: 10px;
+      animation: fadeInNav 1.2s ease-in;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffd54f;
+    }
+    section {
+      max-width: 800px;
+      margin: 100px auto 50px;
+      padding: 50px 20px;
+      background: rgba(255, 255, 255, 0.92);
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+      animation: fadeInSection 1.3s ease-in;
+    }
+    h2 {
+      color: #880e4f;
+      margin-bottom: 20px;
+      animation: slideUp 1.1s ease-in;
+    }
+    .info-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      animation: bounceInCard 1s ease;
+    }
+    footer {
+      background-color: #c2185b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      animation: fadeInFooter 1.2s ease-in;
+    }
+
+    @keyframes fadeInBody { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideDown { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes slideUp { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes fadeInNav { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeInSection { from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes bounceInCard {
+      0% { transform: scale(0.95); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+    @keyframes fadeInFooter { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact & Credits</h1>
+    <p>For ICSE Class 8 E-Tourism Project</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="advantages.html">Advantages</a>
+    <a href="impact.html">Impact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <div class="info-box">
+      <h2>Project By:</h2>
+      <p><strong>Name 1:</strong> Atharva Yadav</p>
+      <p><strong>Name 2:</strong> Lavanya Sharma</p>
+      <p><strong>Class:</strong> 8</p>
+      <p><strong>School:</strong> Jiva Public School</p>
+
+      <h2 style="margin-top: 30px;">About This Project</h2>
+      <p>This project explains how E-Tourism is helping India grow digitally. It is made with HTML and CSS and covers all main points in a fun and simple way for ICSE Class 8 students.</p>
+
+      <h2 style="margin-top: 30px;">Special Thanks</h2>
+      <p>Thanks to our teachers, school, and OpenAI ChatGPT for guidance and help with website structure and content.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 | Class 8 E-Tourism Project | Thank you for visiting!
+  </footer>
+</body>
+</html>

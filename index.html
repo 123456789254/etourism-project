@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Tourism | Explore India Digitally</title>
+  <style>
+    :root {
+      --primary: #0066cc;
+      --accent: #ff9933;
+      --light: #f5faff;
+      --dark: #003366;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--light);
+      color: #333;
+      line-height: 1.6;
+      animation: fadeInBody 1s ease-in;
+    }
+    header {
+      background: url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      animation: zoomInHeader 1.2s ease-out;
+    }
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      animation: slideInDown 1.4s ease-in-out;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      animation: fadeInUp 1.6s ease-in-out;
+    }
+    nav {
+      background: var(--dark);
+      display: flex;
+      justify-content: center;
+      padding: 12px 0;
+      flex-wrap: wrap;
+      animation: fadeInNav 1.5s ease-in;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.3s;
+    }
+    nav a:hover {
+      transform: scale(1.1);
+      color: var(--accent);
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+      animation: fadeInSection 1.5s ease-in;
+    }
+    section h2 {
+      text-align: center;
+      color: var(--primary);
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      position: relative;
+      animation: slideUp 1.2s ease-in-out;
+    }
+    section h2::after {
+      content: '';
+      width: 80px;
+      height: 4px;
+      background-color: var(--primary);
+      display: block;
+      margin: 10px auto 0;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      animation: bounceInCard 1s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .highlight {
+      background: var(--accent);
+      color: white;
+      padding: 20px;
+      margin: 40px 0;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      text-align: center;
+      animation: pulseHighlight 1.2s ease-in-out infinite alternate;
+    }
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      animation: fadeInFooter 1.2s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes zoomInHeader {
+      from { transform: scale(1.05); opacity: 0; } to { transform: scale(1); opacity: 1; }
+    }
+    @keyframes slideInDown {
+      from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; } to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInNav {
+      from { opacity: 0; } to { opacity: 1; }
+    }
+    @keyframes fadeInSection {
+      from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes bounceInCard {
+      0% { transform: scale(0.95); opacity: 0; }
+      60% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+    @keyframes pulseHighlight {
+      0% { transform: scale(1); }
+      100% { transform: scale(1.02); }
+    }
+    @keyframes fadeInFooter {
+      from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Explore India with E-Tourism</h1>
+    <p>Digitally unlocking the beauty of our nation - ICSE Class 8 Project</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="advantages.html">Advantages</a>
+    <a href="impact.html">Impact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>What is E-Tourism?</h2>
+    <div class="card">
+      <p>E-Tourism means using the internet and technology to help people plan and enjoy their travel. With websites, mobile apps, and online booking, tourists can easily find information, see pictures, and book tickets from anywhere at any time. E-Tourism is growing fast in India and helping more people discover new places with ease.</p>
+    </div>
+
+    <div class="highlight">
+      🌍 Did you know? The Ministry of Tourism runs the "Incredible India" website to promote digital tourism worldwide!
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 | ICSE Class 8 Project | Designed with 💙 for India
+  </footer>
+</body>
+</html>

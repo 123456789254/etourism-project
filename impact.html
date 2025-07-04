@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Impact | E-Tourism</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fffbe7;
+      color: #333;
+      animation: fadeInBody 1s ease-in;
+    }
+    header {
+      background-color: #ff9800;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      animation: slideDown 1s ease-in-out;
+    }
+    nav {
+      background-color: #ef6c00;
+      text-align: center;
+      padding: 10px;
+      animation: fadeInNav 1.2s ease-in;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 20px;
+      animation: fadeInUp 1.3s ease-in-out;
+    }
+    h2 {
+      text-align: center;
+      color: #ef6c00;
+      margin-bottom: 30px;
+      animation: slideUp 0.8s ease-in;
+    }
+    .impact {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+      transition: transform 0.3s;
+      animation: fadeInCard 1s ease-in-out;
+    }
+    .impact:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      background-color: #ef6c00;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      animation: fadeInFooter 1.2s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes fadeInNav {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInCard {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes fadeInFooter {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Impact of E-Tourism in India</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="advantages.html">Advantages</a>
+    <a href="impact.html">Impact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section>
+    <h2>How E-Tourism is Changing India</h2>
+    <div class="impact">
+      <h3>Economic Growth</h3>
+      <p>E-Tourism helps boost local businesses, creates jobs, and brings money to different parts of India.</p>
+    </div>
+    <div class="impact">
+      <h3>Digital India Mission</h3>
+      <p>Projects like IRCTC, Incredible India, and state tourism portals help modernize travel and connect villages to cities.</p>
+    </div>
+    <div class="impact">
+      <h3>Environmental Impact</h3>
+      <p>Digital tools reduce paper waste and promote eco-tourism, helping preserve nature.</p>
+    </div>
+    <div class="impact">
+      <h3>Social Benefits</h3>
+      <p>E-Tourism helps people from different cultures explore India and connect with Indian traditions, food, and festivals.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 | Class 8 ICSE E-Tourism Project
+  </footer>
+</body>
+</html>

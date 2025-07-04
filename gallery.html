@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | E-Tourism</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f0f8ff;
+      animation: fadeInBody 1s ease-in;
+    }
+    header {
+      background-color: #1e88e5;
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      animation: slideDown 1s ease-in-out;
+    }
+    nav {
+      background-color: #1565c0;
+      text-align: center;
+      padding: 12px;
+      animation: fadeInNav 1.2s ease-in-out;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #ffeb3b;
+    }
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #1565c0;
+      margin-bottom: 30px;
+      animation: slideUp 0.8s ease-in;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+    .place {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+      animation: fadeInCard 1s ease-in-out;
+    }
+    .place:hover {
+      transform: scale(1.03);
+    }
+    .place img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .place .info {
+      padding: 15px;
+    }
+    .place h3 {
+      margin: 10px 0 5px;
+      color: #1565c0;
+      text-align: center;
+    }
+    .place .description {
+      display: none;
+      font-size: 0.95rem;
+      color: #444;
+      margin-top: 10px;
+      animation: fadeInDetail 0.5s ease-in-out;
+    }
+    .place.active .description {
+      display: block;
+    }
+    footer {
+      background-color: #1e88e5;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      animation: fadeInFooter 1.2s ease-in;
+    }
+
+    @keyframes fadeInBody { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes slideDown { from { transform: translateY(-50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes slideUp { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    @keyframes fadeInNav { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeInCard { from { transform: scale(0.95); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    @keyframes fadeInDetail { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes fadeInFooter { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+  <script>
+    function toggleInfo(index) {
+      const cards = document.querySelectorAll('.place');
+      cards.forEach((card, i) => {
+        if (i === index) {
+          card.classList.toggle('active');
+        } else {
+          card.classList.remove('active');
+        }
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Interactive Gallery of Indian Tourist Places</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="advantages.html">Advantages</a>
+    <a href="impact.html">Impact</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <section>
+    <h2>Click on a Place to Know More</h2>
+    <div class="gallery">
+      <div class="place" onclick="toggleInfo(0)">
+        <img src="15 Fun Things To Do In Palolem Beach, South Goa - Trot_World.jpg" alt="Palolem Beach">
+        <div class="info">
+          <h3>Palolem Beach, Goa</h3>
+          <div class="description">Palolem Beach is one of the cleanest and most beautiful beaches in South Goa. Surrounded by palm trees and peaceful waters, it’s perfect for swimming, dolphin spotting, and sunsets. The beach is known for its calm waves and vibrant shacks. Best time to visit: November to February.</div>
+        </div>
+      </div>
+      <div class="place" onclick="toggleInfo(1)">
+        <img src="078212929Delhi_India_Gate_Main.jpg" alt="India Gate">
+        <div class="info">
+          <h3>India Gate, Delhi</h3>
+          <div class="description">India Gate is a 42-metre tall war memorial located in New Delhi. It honors the 70,000 Indian soldiers who lost their lives during World War I. At night, it glows beautifully and is surrounded by gardens, making it a favorite picnic spot. It is also home to Amar Jawan Jyoti, the flame of the immortal soldier.</div>
+        </div>
+      </div>
+      <div class="place" onclick="toggleInfo(2)">
+        <img src="a-journey-through-masthead-hero-1.jpg" alt="Hampi Temple">
+        <div class="info">
+          <h3>Hampi, Karnataka</h3>
+          <div class="description">Hampi is a UNESCO World Heritage site known for its ancient temples, stone ruins, and giant sculptures. It was once the capital of the Vijayanagara Empire. Tourists come to see the Virupaksha Temple, stone chariots, and the unique boulder-filled landscapes. A paradise for history lovers!</div>
+        </div>
+      </div>
+      <div class="place" onclick="toggleInfo(3)">
+        <img src="b062cce8-top-10.jpg" alt="Kerala">
+        <div class="info">
+          <h3>Tea Gardens, Kerala</h3>
+          <div class="description">The tea gardens of Munnar in Kerala are known for their greenery, misty hills, and peaceful environment. You can walk between tea plantations, visit tea museums, and enjoy fresh mountain air. Kerala is also called "God’s Own Country" because of its natural beauty.</div>
+        </div>
+      </div>
+      <div class="place" onclick="toggleInfo(4)">
+        <img src="Taj_Mahal.webp" alt="Taj Mahal">
+        <div class="info">
+          <h3>Taj Mahal, Agra</h3>
+          <div class="description">The Taj Mahal was built by Mughal Emperor Shah Jahan in memory of his wife Mumtaz Mahal. It is made of white marble and is considered the symbol of eternal love. It is also one of the Seven Wonders of the World and attracts over 7 million tourists every year.</div>
+        </div>
+      </div>
+      <div class="place" onclick="toggleInfo(5)">
+        <img src="The_Golden_Temple_of_Amrithsar_7.jpg.webp" alt="Golden Temple">
+        <div class="info">
+          <h3>Golden Temple, Amritsar</h3>
+          <div class="description">The Golden Temple is the most sacred shrine of Sikhism. Its upper floors are covered with gold and it is surrounded by a beautiful lake called the Amrit Sarovar. The temple is open to people of all faiths and serves free meals (Langar) to thousands every day.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 | Class 8 E-Tourism Project
+  </footer>
+</body>
+</html>
